@@ -2,7 +2,7 @@ import React from "react";
 import "./about.css";
 import AboutHeader from "./aboutHeader";
 import { GiBookshelf } from "react-icons/gi";
-import { BrowserRouter } from "react-router-dom";
+// import { BrowserRouter } from "react-router-dom";
 import { BsPatchCheckFill } from "react-icons/bs";
 import { useInView } from "react-intersection-observer";
 function About() {
