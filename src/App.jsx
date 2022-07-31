@@ -9,11 +9,11 @@ function App() {
   return (
     <div>
       <Header />
-      <Nav />
+      {/* <Nav />
       <About />
       <PortfolioHead />
       <Contact />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }
