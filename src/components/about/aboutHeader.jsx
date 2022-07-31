@@ -1,4 +1,5 @@
 import React from "react";
+import MyPix from "../../images/jeff.jpg";
 import { HashLink as Link } from "react-router-hash-link";
 
 import { BrowserRouter } from "react-router-dom";
@@ -9,7 +10,7 @@ function aboutHeader() {
       <div className="left">
         <div className="imgh"></div>
         <div className="im">
-          <img src={process.env.PUBLIC_URL + "images/jeff.jpg"} alt="jee" />
+          <img src={MyPix} alt="jee" />
         </div>
       </div>
       <div className="right">
