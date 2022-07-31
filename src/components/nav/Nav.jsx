@@ -7,7 +7,6 @@ import { RiServiceLine } from "react-icons/ri";
 import { FcBusinessContact } from "react-icons/fc";
 import { BrowserRouter } from "react-router-dom";
 import { HashLink as NavLink } from "react-router-hash-link";
-import { useInView } from "react-intersection-observer";
 
 function Nav() {
   // const navLinks = ({ isActive }) => {
@@ -17,7 +16,6 @@ function Nav() {
   // };
   const [activeNav, setActiveNav] = React.useState("#");
 
-  const { ref: myRef, inView: myElvisi } = useInView();
   return (
     <BrowserRouter>
       <nav className="navbar">
@@ -32,9 +30,8 @@ function Nav() {
         <NavLink
           to="#about"
           onClick={() => setActiveNav("#about")}
-          ref={myRef}
           className={` 
-          ${activeNav === "#about" && myElvisi ? "active" : ""}`}
+          ${activeNav === "#about" ? "active" : ""}`}
         >
           <BsPersonBoundingBox />
         </NavLink>
