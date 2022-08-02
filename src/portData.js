@@ -4,7 +4,6 @@ import IMG3 from "./images/pggygame.png";
 import IMG4 from "./images/tabs.png";
 import IMG5 from "./images/tour.png";
 import IMG6 from "./images/mapty-app.png";
-// import IMG6 from "./images/portfolio6.jpg";
 
 const data = [
   {
@@ -21,7 +20,7 @@ const data = [
     title: "Portfolio Site",
     para: "CSS - React.js",
     preV: "Netlify",
-    code: "github",
+    code: "https://github.com/Jeff-Ad/portfolio-site",
   },
   {
     id: 3,

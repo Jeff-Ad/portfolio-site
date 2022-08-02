@@ -3,7 +3,7 @@ import "./footer.css";
 function Footer() {
   return (
     <footer className="footer__link">
-      <a href="github.com" target="_blank" rel="noreferral">
+      <a href="https://github.com/Jeff-Ad" target="_blank" rel="noreferrer">
         <div className="footer__content">
           <small>&copy; Designe And Built By Jeffrey Adakole</small>
         </div>
