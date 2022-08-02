@@ -39,12 +39,12 @@ function Contact() {
           console.log(error.text);
         }
       );
-    setInfo({
-      name: "",
-      email: "",
-      subject: "",
-      message: "",
-    });
+    // setInfo({
+    //   name: "",
+    //   email: "",
+    //   subject: "",
+    //   message: "",
+    // });
   }
 
   return (
