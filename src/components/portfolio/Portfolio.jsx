@@ -4,9 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import "./portfolio.css";
 
 function Portfolio({ info }) {
-  console.log(info);
   const str = "<code />";
-
   return (
     <article className="portfolio__item">
       <div className="portfolio__item-image">

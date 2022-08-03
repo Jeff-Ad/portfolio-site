@@ -5,8 +5,11 @@ import { BsWhatsapp } from "react-icons/bs";
 import { send } from "emailjs-com";
 import { SiIcq } from "react-icons/si";
 import { useInView } from "react-intersection-observer";
-
+const Result = () => {
+  return <p>Your message has been sent successfully</p>;
+};
 function Contact() {
+  const [result, showResult] = React.useState(false);
   const { ref: myRef, inView: myElvisi } = useInView();
   const [info, setInfo] = React.useState({
     name: "",
@@ -26,10 +29,11 @@ function Contact() {
   }
 
   // const form = React.useRef();
+
   function handleSubmit(e) {
     e.preventDefault();
 
-    send("service_zom35k9", "template_7eevzku", { info }, "3XNfer5AbAzUrbd2B")
+    send("service_zom35k9", "template_7eevzku", info, "3XNfer5AbAzUrbd2B")
       // e.target.reset();
       .then(
         (result) => {
@@ -39,12 +43,18 @@ function Contact() {
           console.log(error.text);
         }
       );
-    // setInfo({
-    //   name: "",
-    //   email: "",
-    //   subject: "",
-    //   message: "",
-    // });
+
+    setInfo({
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+    });
+
+    showResult(true);
+    setTimeout(() => {
+      showResult(false);
+    }, 3000);
   }
 
   return (
@@ -160,6 +170,7 @@ function Contact() {
             <button type="submit" className="btn btn-primary">
               Send Message
             </button>
+            <div>{result ? <Result /> : null}</div>
           </form>
         </div>
       </div>
