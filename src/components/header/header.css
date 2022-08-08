@@ -99,6 +99,12 @@ header {
   bottom: 3rem;
   margin-top: 0px;
 }
+.fav {
+  transition: var(--transition);
+}
+.fav:hover {
+  margin-bottom: 2px;
+}
 .header__socails::before {
   content: "";
   position: absolute;
@@ -116,6 +122,10 @@ header {
   font-weight: 600;
   font-size: 1rem;
   top: 13.2rem;
+  transition: var(--transition);
+}
+.scroll__down:hover {
+  margin-bottom: 3px;
 }
 .scroll__down::before {
   content: "";

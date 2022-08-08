@@ -4,13 +4,15 @@ import { MdOutlineEmail } from "react-icons/md";
 import { BsWhatsapp } from "react-icons/bs";
 import { send } from "emailjs-com";
 import { SiIcq } from "react-icons/si";
-import { useInView } from "react-intersection-observer";
+import AOS from "aos";
+import "aos/dist/aos.css";
+// import { useInView } from "react-intersection-observer";
 const Result = () => {
   return <p>Your message has been sent successfully</p>;
 };
 function Contact() {
   const [result, showResult] = React.useState(false);
-  const { ref: myRef, inView: myElvisi } = useInView();
+  // const { ref: myRef, inView: myElvisi } = useInView();
   const [info, setInfo] = React.useState({
     name: "",
     email: "",
@@ -56,10 +58,23 @@ function Contact() {
       showResult(false);
     }, 3000);
   }
+  React.useEffect(() => {
+    AOS.init({});
+    AOS.refresh();
+  }, []);
 
   return (
     <section id="contact">
-      <div ref={myRef} className={`sec ${myElvisi ? "show" : ""}`}>
+      <div
+        data-aos="fade-up"
+        data-aos-offset="50"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="true"
+        data-aos-anchor-placement="top-center"
+      >
         <h5>
           I’m currently open to new opportunities, my inbox is always open.{" "}
         </h5>
@@ -81,7 +96,17 @@ function Contact() {
         </div>
       </div> */}
         <div className="container contact__container">
-          <div className="contact__options">
+          <div
+            className="contact__options"
+            data-aos="fade-right"
+            data-aos-offset="50"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="true"
+            data-aos-anchor-placement="top-center"
+          >
             {/* <article className="contact__option">
             <MdOutlineEmail className="contact_icon" />
             <h4>Email</h4>

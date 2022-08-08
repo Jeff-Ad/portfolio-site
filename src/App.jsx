@@ -5,19 +5,35 @@ import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import Nav from "./components/nav/Nav";
 import PortfolioHead from "./components/portfolio/PortfolioHead";
-class App extends React.Component {
-  render() {
-    return (
-      <div>
-        <Header />
-        <Nav />
-        <About />
-        <PortfolioHead />
-        <Contact />
-        <Footer />
-      </div>
-    );
-  }
+import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
+function App() {
+  const [loading, setLoading] = React.useState(false);
+
+  React.useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1990);
+  }, []);
+
+  return (
+    <div>
+      {loading ? (
+        <div className="loader">
+          <ClimbingBoxLoader color={""} loading={loading} size={50} />
+        </div>
+      ) : (
+        <div>
+          <Header />
+          <Nav />
+          <About />
+          <PortfolioHead />
+          <Contact />
+          <Footer />
+        </div>
+      )}
+    </div>
+  );
 }
 
 export default App;

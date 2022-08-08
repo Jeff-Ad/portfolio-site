@@ -1,12 +1,14 @@
 import React from "react";
 import "./about.css";
-import AboutHeader from "./aboutHeader";
+import AboutHeader from "./AboutHeader";
 import { GiBookshelf } from "react-icons/gi";
 // import { BrowserRouter } from "react-router-dom";
 import { BsPatchCheckFill } from "react-icons/bs";
-import { useInView } from "react-intersection-observer";
+// import { useInView } from "react-intersection-observer";
+import AOS from "aos";
+import "aos/dist/aos.css";
 function About() {
-  const { ref: myRef, inView: myElvisi } = useInView();
+  // const { ref: myRef, inView: myElvisi } = useInView();
   // const [miElvisi, setMiElvisi] = React.useState(false);
   // const myRef = React.useRef();
   // console.log("miElvisi", miElvisi);
@@ -16,10 +18,24 @@ function About() {
   //     setMiElvisi(entry.isIntersecting);
   //   });
   //   observer.observe(myRef.current);
-  // }, []);
+  // }, []);ref={myRef} className={`sec ${myElvisi ? "show" : ""}`}
+  React.useEffect(() => {
+    //globalization
+    AOS.init({});
+    AOS.refresh();
+  }, []);
   return (
     <section id="about">
-      <div ref={myRef} className={`sec ${myElvisi ? "show" : ""}`}>
+      <div
+        data-aos="fade-up"
+        data-aos-offset="50"
+        data-aos-delay="20"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="true"
+        data-aos-anchor-placement="top-center"
+      >
         <h5>Get To Know More</h5>
         <h2>About me</h2>
         {/* <article className="">
@@ -41,13 +57,26 @@ function About() {
         </div> */}
           <div className="about__content">
             <div className="about__cards">
-              <article className="about__card">
+              <article
+                className="about__card"
+                data-aos="fade-right"
+                data-aos-delay="20"
+                data-aos-duration="1000"
+                data-aos-once="true"
+                data-aos-easing="ease-in-out"
+              >
                 <div className="about__icon-head">
                   <GiBookshelf className="about__icon" />
                   <h3>Technologies And Tools I've Worked With </h3>
                 </div>
                 <h3>Languages & Library</h3>
-                <div className="lang">
+                <div
+                  className="lang"
+                  data-aos="fade-up"
+                  data-aos-delay="20"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                >
                   <div className="about__icon-heads">
                     <BsPatchCheckFill className="about__skills-icon" />
                     <small>HTML</small>
@@ -102,7 +131,14 @@ function About() {
                   </div>
                 </div>
               </article>
-              <article className="about__card">
+              <article
+                className="about__card"
+                data-aos="fade-left"
+                data-aos-delay="20"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-once="true"
+              >
                 <div className="about__icon-head">
                   <GiBookshelf className="about__icon" />
                   <h3>Soft Skills </h3>
@@ -130,7 +166,14 @@ function About() {
                   </div>
                 </div>
               </article>
-              <article className="about__card">
+              <article
+                className="about__card"
+                data-aos="fade-up"
+                data-aos-delay="20"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-once="true"
+              >
                 <div className="about__icon-head">
                   <GiBookshelf className="about__icon" />
                   <h3>Interests </h3>
