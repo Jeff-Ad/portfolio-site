@@ -36,8 +36,24 @@ function About() {
         data-aos-once="true"
         data-aos-anchor-placement="top-center"
       >
-        <h5>Get To Know More</h5>
-        <h2>About me</h2>
+        <h5
+          data-aos="fade-down"
+          data-aos-offset="50"
+          data-aos-delay="0"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
+          Get To Know More
+        </h5>
+        <h2
+          data-aos="fade-up"
+          data-aos-offset="50"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
+          About me
+        </h2>
         {/* <article className="">
           </article> */}
         <AboutHeader />
@@ -76,6 +92,7 @@ function About() {
                   data-aos-delay="20"
                   data-aos-duration="1000"
                   data-aos-easing="ease-in-out"
+                  data-aos-once="true"
                 >
                   <div className="about__icon-heads">
                     <BsPatchCheckFill className="about__skills-icon" />

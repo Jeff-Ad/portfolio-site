@@ -68,8 +68,13 @@
 .right p {
   font-size: 0.9rem;
 }
-.portfolio__item-cta {
+.right > h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.portfolio__item-ctaa {
   justify-content: end;
+  margin: 1rem 0 -0.99rem;
 }
 /* end of about header */
 .about__mee {

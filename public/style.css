@@ -43,7 +43,7 @@ body {
   background: var(--color-bg);
   color: var(--color-white);
   line-height: 1.7;
-  background-image: url(./bg-texture.png);
+  /* background-image: url(./bg-texture.png); */
 }
 /* General styles */
 .container {
@@ -91,6 +91,7 @@ section > div > h2,
 section > div > h5 {
   text-align: center;
   color: var(--color-light);
+  font-size: 1.5rem;
 }
 section > div > h2 {
   /* background-color: var(--color-light); */

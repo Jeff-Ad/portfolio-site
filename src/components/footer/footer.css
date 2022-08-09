@@ -17,4 +17,6 @@ footer {
   border-radius: 1rem;
   margin-top: 5rem;
   background: transparent;
+  font-weight: 600;
+  font-size: 1rem;
 }

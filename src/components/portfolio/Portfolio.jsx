@@ -5,7 +5,7 @@ import "./portfolio.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-function Portfolio({ info }) {
+function Portfolio({ info, index }) {
   React.useEffect(() => {
     //globalization
     AOS.init({});
@@ -13,12 +13,15 @@ function Portfolio({ info }) {
   }, []);
   const str = "<code />";
   return (
-    <article className="portfolio__item">
+    <article className="portfolio__item" id="">
       <div
         data-aos="fade-up-left"
         data-aos-offset="50"
-        data-aos-delay="50"
+        // data-aos-delay="50"
+        data-aos-delay={`${index * 200 + 50}`}
+        // data-aos-duration={`${index * 200 + 50}`}
         data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
         data-aos-once="true"
       >
         <div className="portfolio__item-image">

@@ -29,7 +29,7 @@ function AboutHeader() {
         <h3
           data-aos="fade-down"
           data-aos-offset="50"
-          data-aos-delay="50"
+          data-aos-delay="0"
           data-aos-duration="1000"
           data-aos-once="true"
         >
@@ -47,14 +47,14 @@ function AboutHeader() {
           specialized in building, developing and occasionally designing web
           apps
         </p>
-        <div className="portfolio__item-cta">
+        <div className="portfolio__item-ctaa">
           <BrowserRouter>
             <Link
               to="#contact"
               className="btn btn-primary"
               data-aos="fade-up"
               data-aos-offset="50"
-              data-aos-delay="50"
+              data-aos-delay="150"
               data-aos-duration="1000"
               data-aos-once="true"
             >

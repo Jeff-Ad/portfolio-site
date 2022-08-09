@@ -10,6 +10,7 @@ function Header() {
     AOS.init({});
     AOS.refresh();
   }, []);
+
   return (
     <header className="container head" id="hder">
       <HeaderSocials />

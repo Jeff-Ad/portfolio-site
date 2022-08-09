@@ -5,8 +5,8 @@ import Portfolio from "./Portfolio";
 import AOS from "aos";
 import "aos/dist/aos.css";
 function PortfolioHead() {
-  const dataPort = PortData.map((data) => {
-    return <Portfolio key={data.id} info={data} />;
+  const dataPort = PortData.map((data, index) => {
+    return <Portfolio key={data.id} info={data} index={index} />;
   });
   React.useEffect(() => {
     //globalization
@@ -15,18 +15,29 @@ function PortfolioHead() {
   }, []);
   return (
     <section id="portfolio">
-      <div
-        data-aos="fade-up"
-        data-aos-offset="50"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-        data-aos-mirror="true"
-        data-aos-once="true"
-        data-aos-anchor-placement="top-center"
-      >
-        <h5>Few Things I've Built</h5>
-        <h2>Portfolio</h2>
+      <div>
+        <h5
+          data-aos="fade-down"
+          data-aos-offset="50"
+          data-aos-delay="0"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="true"
+        >
+          Few Things I've Built
+        </h5>
+        <h2
+          data-aos="fade-up"
+          data-aos-offset="50"
+          data-aos-delay="100"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="true"
+        >
+          Portfolio
+        </h2>
         <div className="container portfolio__container">{dataPort}</div>
       </div>
     </section>

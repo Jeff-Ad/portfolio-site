@@ -75,11 +75,25 @@ function Contact() {
         data-aos-once="true"
         data-aos-anchor-placement="top-center"
       >
-        <h5>
-          I’m currently open to new opportunities, my inbox is always open.{" "}
+        <h5
+          data-aos="fade-left"
+          data-aos-offset="50"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
+          I’m currently open to new opportunities, my inbox is always open.
         </h5>
 
-        <h2>Get In Touch</h2>
+        <h2
+          data-aos="fade-up"
+          data-aos-offset="50"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
+          Get In Touch
+        </h2>
         {/* <div className="if">
         <div class="contact__map">
           <iframe
@@ -105,7 +119,6 @@ function Contact() {
             data-aos-easing="ease-in-out"
             data-aos-mirror="true"
             data-aos-once="true"
-            data-aos-anchor-placement="top-center"
           >
             {/* <article className="contact__option">
             <MdOutlineEmail className="contact_icon" />
@@ -119,7 +132,17 @@ function Contact() {
               Say Hello
             </a>
           </article> */}
-            <article className="contact__option">
+            <article
+              className="contact__option"
+              data-aos="fade-right"
+              data-aos-offset="50"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top-center"
+            >
               <MdOutlineEmail className="contact_icon" />
 
               <h5>odehkole@gmail.com</h5>
@@ -131,7 +154,17 @@ function Contact() {
                 Say Hello
               </a>
             </article>
-            <article className="contact__option">
+            <article
+              className="contact__option"
+              data-aos="fade-right"
+              data-aos-offset="50"
+              data-aos-delay="150"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top-center"
+            >
               <BsWhatsapp className="contact_icon" />
 
               <h5>+234 706 616 3175</h5>
@@ -143,7 +176,17 @@ function Contact() {
                 Say Hello On WhatsApp
               </a>
             </article>
-            <article className="contact__option">
+            <article
+              className="contact__option"
+              data-aos="fade-right"
+              data-aos-offset="50"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top-center"
+            >
               <SiIcq className="contact_icon" />
 
               <h5>+234 706 616 3175</h5>
