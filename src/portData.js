@@ -1,7 +1,5 @@
 import IMG1 from "./images/forkify.png";
 import IMG2 from "./images/portfolio.png";
-import IMG3 from "./images/pggygame.png";
-import IMG4 from "./images/tabs.png";
 import IMG5 from "./images/tour.png";
 import IMG6 from "./images/mapty-app.png";
 
@@ -22,32 +20,17 @@ const data = [
     preV: "Netlify",
     code: "https://github.com/Jeff-Ad/portfolio-site",
   },
+
   {
     id: 3,
-    image: IMG3,
-    title: "Piggygame",
-    para: "HTML - CSS - JavaScript ",
-    preV: "Netlify",
-    code: "github",
-  },
-  {
-    id: 4,
-    image: IMG4,
-    title: "Tabs",
-    para: "CSS - React.js",
-    preV: "Netlify",
-    code: "github",
-  },
-  {
-    id: 5,
     image: IMG5,
     title: "Tour Site",
     para: "CSS - React.js",
-    preV: "Netlify",
-    code: "github",
+    preV: "https://Jeff-Ad.github.io/tour-site",
+    code: "https://github.com/Jeff-Ad/tour-site",
   },
   {
-    id: 6,
+    id: 4,
     image: IMG6,
     title: "Mapty-App",
     para: "HTML - CSS - JavaScript",

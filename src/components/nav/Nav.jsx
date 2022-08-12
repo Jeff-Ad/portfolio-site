@@ -26,7 +26,7 @@ function Nav() {
         <Link to="hder" spy={true} smooth={true} offset={-5} duration={200}>
           <FcHome />
         </Link>
-        <Link to="about" spy={true} smooth={true} offset={-50} duration={200}>
+        <Link to="about" spy={true} smooth={true} offset={-10} duration={200}>
           <BsPersonBoundingBox />
         </Link>
         <Link
@@ -35,10 +35,11 @@ function Nav() {
           smooth={true}
           offset={-10}
           duration={100}
+          onClick={() => setActiveNav(true)}
         >
           <RiServiceLine />
         </Link>
-        <Link to="contact" spy={true} smooth={true} offset={-10} duration={200}>
+        <Link to="contact" spy={true} smooth={true} offset={50} duration={200}>
           <FcBusinessContact />
         </Link>
       </nav>

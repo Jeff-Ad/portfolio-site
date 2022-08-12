@@ -6,6 +6,7 @@ import Header from "./components/header/Header";
 import Nav from "./components/nav/Nav";
 import PortfolioHead from "./components/portfolio/PortfolioHead";
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
+
 function App() {
   const [loading, setLoading] = React.useState(false);
 
@@ -20,7 +21,7 @@ function App() {
     <div>
       {loading ? (
         <div className="loader">
-          <ClimbingBoxLoader color={""} loading={loading} size={50} />
+          <ClimbingBoxLoader color={""} loading={loading} size={30} />
         </div>
       ) : (
         <div>

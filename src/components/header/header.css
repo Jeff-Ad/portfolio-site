@@ -101,6 +101,7 @@ header {
 }
 .fav {
   transition: var(--transition);
+  cursor: pointer;
 }
 .fav:hover {
   margin-bottom: 2px;
@@ -123,6 +124,7 @@ header {
   font-size: 1rem;
   top: 13.2rem;
   transition: var(--transition);
+  cursor: pointer;
 }
 .scroll__down:hover {
   margin-bottom: 3px;
@@ -141,9 +143,6 @@ header {
 
 /***** medium devices *****/
 @media screen and (max-width: 1024px) {
-  header {
-    /* height: 90vh; */
-  }
   /* .head {
     grid-template-columns: 1fr;
   }

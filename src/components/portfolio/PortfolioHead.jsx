@@ -2,6 +2,7 @@ import React from "react";
 import PortData from "../../portData";
 import Portfolio from "./Portfolio";
 // import { useInView } from "react-intersection-observer";
+// import Works from "./Works";
 import AOS from "aos";
 import "aos/dist/aos.css";
 function PortfolioHead() {
@@ -38,6 +39,9 @@ function PortfolioHead() {
         >
           Portfolio
         </h2>
+        {/* <Works /> */}
+        {/* <Works /> */}
+        <br />
         <div className="container portfolio__container">{dataPort}</div>
       </div>
     </section>

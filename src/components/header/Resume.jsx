@@ -1,12 +1,24 @@
 import React from "react";
+
+import { Link } from "react-scroll";
 // import Rse from "../images/cv.pdf";
 function Resume() {
   return (
     <div className="resume">
-      <a href="#contact" className="btn btn-primary ani">
+      {/* <a href="#contact" className="btn btn-primary ani">
         Contact me
-      </a>
-      <a href={process.env.PUBLIC_URL + "images/resume.pdf"} className="btn">
+      </a> */}
+      <Link
+        className="btn btn-primary ani"
+        to="contact"
+        spy={true}
+        smooth={true}
+        offset={50}
+        duration={200}
+      >
+        Contact me
+      </Link>
+      <a href={process.env.PUBLIC_URL + "myresume.pdf"} className="btn">
         Download Resumé
       </a>
     </div>

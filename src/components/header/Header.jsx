@@ -5,6 +5,7 @@ import HeaderSocials from "./HeaderSocials";
 import MyPix from "../../images/jman.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-scroll";
 function Header() {
   React.useEffect(() => {
     AOS.init({});
@@ -61,9 +62,19 @@ function Header() {
         >
           Software Developer
         </h5>
-        <a href="#contact" className="scroll__down fav">
+        {/* <a href="#contact" className="scroll__down fav">
           Scroll Down
-        </a>
+        </a> */}
+        <Link
+          className="scroll__down fav"
+          to="contact"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={200}
+        >
+          Scroll Down
+        </Link>
         <Resume />
       </div>
     </header>

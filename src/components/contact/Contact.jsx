@@ -1,9 +1,8 @@
 import React from "react";
 import "./contact.css";
-import { MdOutlineEmail } from "react-icons/md";
-import { BsWhatsapp } from "react-icons/bs";
 import { send } from "emailjs-com";
-import { SiIcq } from "react-icons/si";
+import Popup from "../../Popup";
+import data from "../../contactCards";
 import AOS from "aos";
 import "aos/dist/aos.css";
 // import { useInView } from "react-intersection-observer";
@@ -65,6 +64,8 @@ function Contact() {
 
   return (
     <section id="contact">
+      <Popup />
+
       <div
         data-aos="fade-up"
         data-aos-offset="50"
@@ -109,30 +110,43 @@ function Contact() {
           ></iframe>
         </div>
       </div> */}
+
         <div className="container contact__container">
           <div
             className="contact__options"
-            data-aos="fade-right"
-            data-aos-offset="50"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-            data-aos-mirror="true"
-            data-aos-once="true"
+            // data-aos="fade-right"
+            // data-aos-offset="50"
+            // data-aos-delay="50"
+            // data-aos-duration="1000"
+            // data-aos-easing="ease-in-out"
+            // data-aos-mirror="true"
+            // data-aos-once="true"
           >
-            {/* <article className="contact__option">
-            <MdOutlineEmail className="contact_icon" />
-            <h4>Email</h4>
-            <h5>adakolejeffrey@gmail.com</h5>
-            <a
-              href="mailto:adakolejeffrey@gmail.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Say Hello
-            </a>
-          </article> */}
-            <article
+            {data.map(({ id, Icon, title, href, anchor }, index) => {
+              return (
+                <div
+                  key={id}
+                  data-aos="fade-right"
+                  data-aos-offset="50"
+                  data-aos-delay={`${index * 200 + 50}`}
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                  data-aos-mirror="true"
+                  data-aos-once="true"
+                >
+                  <article className="contact__option">
+                    <Icon className="contact_icon" />
+
+                    <h5>{title}</h5>
+                    <a href={href} target="_blank" rel="noreferrer">
+                      {anchor}
+                    </a>
+                  </article>
+                </div>
+              );
+            })}
+
+            {/* <article
               className="contact__option"
               data-aos="fade-right"
               data-aos-offset="50"
@@ -153,12 +167,12 @@ function Contact() {
               >
                 Say Hello
               </a>
-            </article>
-            <article
+            </article> */}
+            {/* <article
               className="contact__option"
               data-aos="fade-right"
-              data-aos-offset="50"
-              data-aos-delay="150"
+              data-aos-offset="100"
+              data-aos-delay="55"
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"
               data-aos-mirror="true"
@@ -179,8 +193,8 @@ function Contact() {
             <article
               className="contact__option"
               data-aos="fade-right"
-              data-aos-offset="50"
-              data-aos-delay="200"
+              data-aos-offset="100"
+              data-aos-delay="60"
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"
               data-aos-mirror="true"
@@ -197,7 +211,7 @@ function Contact() {
               >
                 Say Hello On ICQ
               </a>
-            </article>
+            </article> */}
           </div>
           {/* End of Contact  function  */}
           <form onSubmit={handleSubmit}>
