@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Link } from "react-scroll";
-// import Rse from "../images/cv.pdf";
+import Rse from "../../images/cv.pdf";
 function Resume() {
   return (
     <div className="resume">
@@ -18,7 +18,7 @@ function Resume() {
       >
         Contact me
       </Link>
-      <a href={process.env.PUBLIC_URL + "myresume.pdf"} className="btn">
+      <a href={Rse} className="btn">
         Download Resumé
       </a>
     </div>

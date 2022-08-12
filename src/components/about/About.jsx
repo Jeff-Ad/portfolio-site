@@ -78,7 +78,7 @@ function About() {
                 <article className="about__card">
                   <div className="about__icon-head">
                     <GiBookshelf className="about__icon" />
-                    <h3>Technologies And Tools I've Worked With </h3>
+                    <h3>Software And Tools I've Worked With </h3>
                   </div>
                   <h3>Languages & Library</h3>
                   <div

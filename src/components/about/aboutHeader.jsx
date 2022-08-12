@@ -43,9 +43,7 @@ function AboutHeader() {
           data-aos-once="true"
         >
           I'm JEFFREY ADAKOLE, a graduate of Information and Media Technology
-          (B.Tech) from the Federal University of Technology Minna who is
-          specialized in building, developing and occasionally designing web
-          apps
+          (B.Tech) who builds, develop and design responsive webpages
         </p>
         <div className="portfolio__item-ctaa">
           <BrowserRouter>
