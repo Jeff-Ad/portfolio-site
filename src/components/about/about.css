@@ -21,6 +21,7 @@
   height: 22.5rem;
   width: 20.9rem;
   overflow: hidden;
+  object-fit: contain;
 }
 
 .left {
