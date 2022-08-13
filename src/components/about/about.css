@@ -21,7 +21,7 @@
   height: 22.5rem;
   width: 20.9rem;
   overflow: hidden;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .left {
@@ -33,8 +33,8 @@
   width: 20.9rem;
   /* width: 20.9rem; */
   border-radius: 1rem;
-  /* background-color: var(--color-primary); */
-  background: linear-gradient(to bottom, red, blue);
+  background-color: var(--color-bg);
+  /* background: linear-gradient(to bottom, blue, red); */
   position: absolute;
   opacity: 0.3;
   z-index: 2;
