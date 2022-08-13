@@ -181,7 +181,6 @@ header {
   .mg {
     height: 13rem;
     width: 13rem;
-    object-fit: cover;
   }
   .header__container {
     /* align-items: center; */
