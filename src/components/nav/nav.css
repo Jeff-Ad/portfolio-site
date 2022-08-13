@@ -1,4 +1,4 @@
-nav {
+.nav {
   background: rgba(48, 48, 49, 0.3);
   width: max-content;
   display: block;
@@ -31,4 +31,47 @@ nav a:hover {
 nav a.active {
   background: var(--color-bg);
   color: var(--color-white);
+}
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 800px) {
+  .nav {
+    background: rgba(48, 48, 49, 0.3);
+    width: max-content;
+    display: block;
+    padding: 0.7rem 0.7rem;
+    z-index: 2;
+    position: fixed;
+    left: 18%;
+    height: max-content;
+    /* top: 11rem; */
+    /* bottom: -12rem; */
+    top: 30rem;
+    /* height: 18.6rem; */
+    /* transform: translateX(-50%); */
+    /* bottom: 3rem; */
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0.8rem;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    border-radius: 3rem;
+  }
+  nav a {
+    background: transparent;
+    border-radius: 50%;
+    padding: 0.8rem;
+    display: flex;
+    color: var(--color-light);
+    font-size: 1rem;
+  }
+  nav a:hover {
+    background: var(--color-bg);
+  }
+  nav a.active {
+    background: var(--color-bg);
+    color: var(--color-white);
+  }
 }

@@ -15,18 +15,16 @@ function Nav() {
   //     fontweight: isActive ? "active" : "",
   //   };
   // };
-  const [activeNav, setActiveNav] = React.useState(false);
+  // const [activeNav, setActiveNav] = React.useState(false);
+  // const setClick = () => setActiveNav(false);
   // setActiveNav("");
   return (
     <div>
-      <nav
-        className={`navbar ${activeNav ? "active" : ""}
-               `}
-      >
-        <Link to="hder" spy={true} smooth={true} offset={-5} duration={200}>
+      <nav className="nav">
+        <Link to="hder" spy={true} smooth={true} offset={-5} duration={100}>
           <FcHome />
         </Link>
-        <Link to="about" spy={true} smooth={true} offset={-10} duration={200}>
+        <Link to="about" spy={true} smooth={true} offset={-10} duration={100}>
           <BsPersonBoundingBox />
         </Link>
         <Link
@@ -35,11 +33,10 @@ function Nav() {
           smooth={true}
           offset={-10}
           duration={100}
-          onClick={() => setActiveNav(true)}
         >
           <RiServiceLine />
         </Link>
-        <Link to="contact" spy={true} smooth={true} offset={50} duration={200}>
+        <Link to="contact" spy={true} smooth={true} offset={50} duration={150}>
           <FcBusinessContact />
         </Link>
       </nav>

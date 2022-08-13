@@ -159,7 +159,9 @@ function About() {
                   <div className="soft">
                     <div className="about__icon-soft">
                       <BsPatchCheckFill className="about__skills-icon" />
-                      <small>Critical Thinking & Problem Solving</small>
+                      <small>
+                        Critical Thinking <span>& Problem Solving</span>
+                      </small>
                     </div>
                     <div className="about__icon-soft">
                       <BsPatchCheckFill className="about__skills-icon" />
@@ -167,11 +169,13 @@ function About() {
                     </div>
                     <div className="about__icon-soft">
                       <BsPatchCheckFill className="about__skills-icon" />
-                      <small>Leadership</small>
+                      <small>
+                        Interpersonal Comm<span>unication</span>
+                      </small>
                     </div>
                     <div className="about__icon-soft">
                       <BsPatchCheckFill className="about__skills-icon" />
-                      <small>Interpersonal Communication</small>
+                      <small>Leadership</small>
                     </div>
                     <div className="about__icon-soft">
                       <BsPatchCheckFill className="about__skills-icon" />
@@ -198,7 +202,7 @@ function About() {
                   </div>
                   <div className="about__icon-interest">
                     <BsPatchCheckFill className="about__skills-icon" />
-                    <small>Playing Guitar</small>
+                    <small>Guitar 🎸</small>
                   </div>
                   <div className="about__icon-interest">
                     <BsPatchCheckFill className="about__skills-icon" />

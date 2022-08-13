@@ -5,7 +5,7 @@ import { FaTimes } from "react-icons/fa";
 
 const Popped = (props) => {
   const [msg, setMsg] = React.useState(
-    "Hi there, 😀 welcome to my world, do have a nice time breathing in my weird world 😎"
+    "😊 Hi there, welcome to my world, do have a nice time breathing in my weird world "
   );
   React.useEffect(() => {
     AOS.init({});
@@ -14,7 +14,7 @@ const Popped = (props) => {
   React.useEffect(() => {
     setTimeout(() => {
       setMsg(
-        "Heyyyy 😀 I trust You're having a good time breathing in my weird world 😉 ...just checking out. 'Ohki dohki' 'bye👋🏽' "
+        "Heyyyy  I trust You're having a good time breathing in my weird world  ...just checking out. 'Ohki dohki' 'bye👋🏽' "
       );
     }, 55000);
   }, []);

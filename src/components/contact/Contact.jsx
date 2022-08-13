@@ -76,7 +76,9 @@ function Contact() {
         data-aos-once="true"
         data-aos-anchor-placement="top-center"
       >
+        {/* <div className="hh5"> */}
         <h5
+          className="hh5"
           data-aos="fade-left"
           data-aos-offset="50"
           data-aos-delay="50"
@@ -85,7 +87,7 @@ function Contact() {
         >
           I’m currently open to new opportunities, my inbox is always open.
         </h5>
-
+        {/* </div> */}
         <h2
           data-aos="fade-up"
           data-aos-offset="50"
