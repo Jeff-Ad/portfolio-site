@@ -164,6 +164,9 @@ header {
   header {
     height: 90vh;
   }
+  .resume {
+    gap: 1rem;
+  }
   .head {
     display: grid;
     grid-template-columns: 1fr;
