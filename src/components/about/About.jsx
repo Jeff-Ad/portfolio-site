@@ -4,7 +4,7 @@ import { GiBookshelf } from "react-icons/gi";
 // import { BrowserRouter } from "react-router-dom";
 import { BsPatchCheckFill } from "react-icons/bs";
 // import { useInView } from "react-intersection-observer";
-import AboutHeader from "./AboutHeader";
+import AboutHeader from "./aboutHeader";
 import AOS from "aos";
 import "aos/dist/aos.css";
 function About() {
