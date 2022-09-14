@@ -182,8 +182,8 @@ main {
   padding: 32px;
   width: 100%;
   max-width: 20rem;
-  background: transparent;
-  background-color: rgba(95, 5, 65, 0.2);
+  /* background: transparent; */
+  background-color: rgb(56, 1, 73);
   border-radius: 2.5rem;
 }
 .popup-inner .close-btn {
@@ -193,7 +193,7 @@ main {
   font-size: 1.4rem;
   background: transparent;
   border: 0;
-  color: var(--color-primary);
+  color: var(--color-light);
 }
 /* Media devices */
 

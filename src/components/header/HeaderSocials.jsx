@@ -5,7 +5,7 @@ import { FaTwitter } from "react-icons/fa";
 import { SiIcq } from "react-icons/si";
 function HeaderSocials() {
   return (
-    <div className="header__socails animSoc">
+    <div className="header__socails gap animSoc">
       <a
         href="https://www.linkedin.com/in/jeffrey-adakole-452246135/"
         target="_blank"

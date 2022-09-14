@@ -152,12 +152,27 @@ header {
   .myphoto {
     margin-top: -2.5rem;
   }
-  .header__socails,
+  .header__socails {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 4rem;
+    margin-left: 15rem;
+    margin-top: 6rem;
+    gap: 1rem;
+    font-size: 1.5rem;
+  }
+  .header__socails::before {
+    display: none;
+  }
   .scroll__down {
     display: none;
     transition: all 4s;
   }
 }
+
 /***** small devices *****/
 
 @media screen and (max-width: 600px) {
@@ -177,14 +192,27 @@ header {
     flex-direction: column;
     /* align-items: center; */
   }
+  .header__socails {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    margin: 4rem 0 16rem 3.5rem;
+    gap: 1rem;
+    font-size: 1.3rem;
+  }
 
+  .header__socails::before {
+    display: none;
+  }
   .mg {
     height: 13rem;
     width: 13rem;
   }
   .header__container {
     /* align-items: center; */
-    margin: -3rem 9px 0 0;
+    margin: 3rem 9px 0 0;
   }
   .myphoto .imgh {
     height: 13rem;

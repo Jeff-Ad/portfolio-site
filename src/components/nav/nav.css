@@ -40,19 +40,12 @@ nav a.active {
     background: rgba(48, 48, 49, 0.3);
     width: max-content;
     display: block;
-    padding: 0.7rem 0.7rem;
+    padding: 0.5rem 0.5rem;
     z-index: 2;
     position: fixed;
-    left: 18%;
+    left: 3%;
     height: max-content;
-    /* top: 11rem; */
-    /* bottom: -12rem; */
-    top: 30rem;
-    /* height: 18.6rem; */
-    /* transform: translateX(-50%); */
-    /* bottom: 3rem; */
-    display: flex;
-    flex-direction: row-reverse;
+    top: 15rem;
     gap: 0.8rem;
     align-items: center;
     justify-content: center;
@@ -62,7 +55,7 @@ nav a.active {
   nav a {
     background: transparent;
     border-radius: 50%;
-    padding: 0.8rem;
+    padding: 0.5rem;
     display: flex;
     color: var(--color-light);
     font-size: 1rem;
