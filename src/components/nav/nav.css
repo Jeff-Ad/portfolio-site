@@ -61,10 +61,10 @@ nav a.active {
     font-size: 1rem;
   }
   nav a:hover {
-    background: var(--color-bg);
+    background: rgb(32, 2, 32);
   }
   nav a.active {
-    background: var(--color-bg);
+    background: rgb(32, 2, 32);
     color: var(--color-white);
   }
 }

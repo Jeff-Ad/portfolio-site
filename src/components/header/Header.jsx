@@ -2,6 +2,7 @@ import React from "react";
 import Resume from "./Resume";
 import "./header.css";
 import HeaderSocials from "./HeaderSocials";
+import HeaderSocials1 from "./HeaderSocials1";
 import MyPix from "../../images/jman.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -14,7 +15,7 @@ function Header() {
 
   return (
     <header className="container head" id="hder">
-      <HeaderSocials />
+      <HeaderSocials1 />
       <div
         className="myphoto"
         data-aos="fade-right"
@@ -61,6 +62,9 @@ function Header() {
           data-aos-once="true"
         >
           Software Developer
+          <div>
+            <HeaderSocials />
+          </div>
         </h5>
         {/* <a href="#contact" className="scroll__down fav">
           Scroll Down
