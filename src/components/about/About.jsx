@@ -99,7 +99,7 @@ function About() {
                     </div>
                     <div className="about__icon-heads">
                       <BsPatchCheckFill className="about__skills-icon" />
-                      <small>Bootstrap</small>
+                      <small>Boostrap/Tailwind</small>
                     </div>
                     <div className="about__icon-heads">
                       <BsPatchCheckFill className="about__skills-icon" />
@@ -107,11 +107,15 @@ function About() {
                     </div>
                     <div className="about__icon-heads">
                       <BsPatchCheckFill className="about__skills-icon" />
-                      <small>React</small>
+                      <small>React.js/Next.js</small>
                     </div>
                     <div className="about__icon-heads">
                       <BsPatchCheckFill className="about__skills-icon" />
-                      <small>PHP</small>
+                      <small>Solidity</small>
+                    </div>
+                    <div className="about__icon-heads">
+                      <BsPatchCheckFill className="about__skills-icon" />
+                      <small>Hardhat</small>
                     </div>
                     <div className="about__icon-heads">
                       <BsPatchCheckFill className="about__skills-icon" />
@@ -135,7 +139,7 @@ function About() {
                     </div>
                     <div className="about__icon-heads">
                       <BsPatchCheckFill className="about__skills-icon" />
-                      <small>Heroku</small>
+                      <small>Vercel</small>
                     </div>
                     <div className="about__icon-heads">
                       <BsPatchCheckFill className="about__skills-icon" />

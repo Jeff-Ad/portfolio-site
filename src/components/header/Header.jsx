@@ -61,7 +61,7 @@ function Header() {
           data-aos-mirror="true"
           data-aos-once="true"
         >
-          Software Developer
+          Software Developer | Web3
           <div>
             <HeaderSocials />
           </div>
