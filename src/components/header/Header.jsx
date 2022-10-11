@@ -63,6 +63,18 @@ function Header() {
         >
           Software Developer | Web3
           <div>
+            <Link
+              className="text-light cur"
+              to="footer"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={200}
+            >
+              <h1> 👇🏽Download gift🎁😎</h1>
+            </Link>
+          </div>
+          <div>
             <HeaderSocials />
           </div>
         </h5>
@@ -71,13 +83,13 @@ function Header() {
         </a> */}
         <Link
           className="scroll__down fav"
-          to="contact"
+          to="footer"
           spy={true}
           smooth={true}
           offset={50}
           duration={200}
         >
-          Scroll Down
+          👇🏽Download gift🎁😎
         </Link>
         <Resume />
       </div>
