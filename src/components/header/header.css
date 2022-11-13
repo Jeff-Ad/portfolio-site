@@ -185,9 +185,9 @@ header {
 /***** small devices *****/
 
 @media screen and (max-width: 600px) {
-  header {
+  /* header {
     /* height: 90vh; */
-  }
+  /* } */
   .smd {
     display: none;
   }

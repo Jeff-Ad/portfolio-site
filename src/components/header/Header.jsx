@@ -62,7 +62,7 @@ function Header() {
           data-aos-once="true"
         >
           Software Developer | Web3
-          <div>
+          {/* <div>
             <Link
               className="text-light cur"
               to="footer"
@@ -73,15 +73,15 @@ function Header() {
             >
               <h1> 👇🏽Download gift🎁😎</h1>
             </Link>
-          </div>
+          </div> */}
           <div>
             <HeaderSocials />
           </div>
         </h5>
-        {/* <a href="#contact" className="scroll__down fav">
+        <a href="#contact" className="scroll__down fav">
           Scroll Down
-        </a> */}
-        <Link
+        </a>
+        {/* <Link
           className="scroll__down fav"
           to="footer"
           spy={true}
@@ -90,7 +90,7 @@ function Header() {
           duration={200}
         >
           👇🏽Download gift🎁😎
-        </Link>
+        </Link> */}
         <Resume />
       </div>
     </header>
