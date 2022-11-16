@@ -6,7 +6,9 @@ function Footer() {
     <footer className="footer__link" id="footer">
       <a href="https://github.com/Jeff-Ad" target="_blank" rel="noreferrer">
         <div className="footer__content">
-          <small>&copy; Designe And Built By Jeffrey Adakole</small>
+          <small>
+            &copy; Designed & Built By Jeffrey Adakole with &#10084;
+          </small>
         </div>
       </a>
       {/* <div className="footer__content">
