@@ -7,7 +7,7 @@ function Footer() {
       <a href="https://github.com/Jeff-Ad" target="_blank" rel="noreferrer">
         <div className="footer__content">
           <small>
-            &copy; Designed & Built By Jeffrey Adakole with &#10084;
+            &copy; Designed & Built By Jeffrey Adakole with &#129293;
           </small>
         </div>
       </a>
