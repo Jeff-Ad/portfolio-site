@@ -33,7 +33,7 @@ function AboutHeader() {
           data-aos-duration="1000"
           data-aos-once="true"
         >
-          Hellooo,
+          Hellooo!,
         </h3>
         <p
           data-aos="fade-left"

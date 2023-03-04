@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Link } from "react-scroll";
-import Rse from "../../images/jresume.pdf";
+import Rse from "../../images/Resume1.0.pdf";
 function Resume() {
   return (
     <div className="resume">
