@@ -1,10 +1,11 @@
-import React from "react";
-import MyPix from "../../images/jeff.png";
-import { HashLink as Link } from "react-router-hash-link";
-import { BrowserRouter } from "react-router-dom";
-import "./about.css";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React from 'react';
+import MyPix from '../../images/jeff.png';
+import { HashLink as Link } from 'react-router-hash-link';
+import { BrowserRouter } from 'react-router-dom';
+import './about.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 function AboutHeader() {
   React.useEffect(() => {
     AOS.init({});
